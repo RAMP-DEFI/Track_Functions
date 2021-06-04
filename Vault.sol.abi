@@ -1,0 +1,200 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_autostake",
+        "type": "bool"
+      }
+    ],
+    "name": "deposit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "getAssetBalance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "_fromVault",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint48",
+            "name": "price",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint40",
+            "name": "interest",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint8",
+            "name": "signatureV",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "signatureR",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "signatureS",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IPriceInfo.PriceInfo",
+        "name": "_priceInfo",
+        "type": "tuple"
+      }
+    ],
+    "name": "getMaxWithdrawable",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      }
+    ],
+    "name": "getPoolBalance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_autoUnstake",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint48",
+            "name": "price",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint40",
+            "name": "interest",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint8",
+            "name": "signatureV",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "signatureR",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "signatureS",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IPriceInfo.PriceInfo",
+        "name": "_priceInfo",
+        "type": "tuple"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
+

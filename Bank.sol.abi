@@ -1,0 +1,371 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint48",
+            "name": "price",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint40",
+            "name": "interest",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint8",
+            "name": "signatureV",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "signatureR",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "signatureS",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IPriceInfo.PriceInfo",
+        "name": "_priceInfo",
+        "type": "tuple"
+      }
+    ],
+    "name": "borrow",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "getBorrowed",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "getInterestDue",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "interestDue",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      }
+    ],
+    "name": "getInterestRate",
+    "outputs": [
+      {
+        "internalType": "uint40",
+        "name": "interestRate",
+        "type": "uint40"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint48",
+            "name": "price",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint40",
+            "name": "interest",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint8",
+            "name": "signatureV",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "signatureR",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "signatureS",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IPriceInfo.PriceInfo",
+        "name": "_priceInfo",
+        "type": "tuple"
+      }
+    ],
+    "name": "getMaxBorrowable",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_quoteDurationSeconds",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRepayQuote",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "borrowed",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "interest",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint48",
+            "name": "price",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint40",
+            "name": "interest",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint8",
+            "name": "signatureV",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "signatureR",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "signatureS",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IPriceInfo.PriceInfo",
+        "name": "_priceInfo",
+        "type": "tuple"
+      }
+    ],
+    "name": "isLiquidatable",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "result",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "accountCollateralRatio",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "collateralValueUsd",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_autoStake",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint48",
+            "name": "price",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint40",
+            "name": "interest",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint8",
+            "name": "signatureV",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "signatureR",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "signatureS",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IPriceInfo.PriceInfo",
+        "name": "_priceInfo",
+        "type": "tuple"
+      }
+    ],
+    "name": "repay",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
+
